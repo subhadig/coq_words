@@ -2,16 +2,18 @@ COQsources = COQsources or {}
 
 COQsources['Dict words'] = {
     name = 'WORD',
-    fn = function (_, callback)
+    fn = function (args, callback)
         -- Only plaintext and markdown filetypes are supported
         if vim.bo.filetype ~= 'markdown' and vim.bo.filetype ~= 'text' then
             callback(nil)
         end
 
         -- Get the word under cursor
-        local cur_line = vim.fn.getline('.')
+        local row, col = unpack(args.pos)
+        local cur_line = vim.fn.getline(row + 1)
+        local cur_line_till_cursor = string.sub(cur_line, 1, col)
         local cur_word = ""
-        for w in string.gmatch(cur_line, "%s?(%a+)$") do
+        for w in string.gmatch(cur_line_till_cursor, "%s?(%a+)$") do
             cur_word = w
             break
         end
