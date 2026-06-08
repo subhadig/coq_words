@@ -10,6 +10,7 @@ Uses the [look](https://linuxcommand.org/lc3_man_pages/look1.html) command.
 1. The `look` command is available.
 2. The [/usr/share/dict/words](https://en.wikipedia.org/wiki/Words_(Unix)) file
    is available.
+3. Supported on Linux and MacOS.
 
 
 ## Installation
