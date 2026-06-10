@@ -7,10 +7,11 @@ Uses the [look](https://linuxcommand.org/lc3_man_pages/look1.html) command.
 
 ## Prerequisites
 
+1. The `coq_nvim` Neovim plugin is installed.
 1. The `look` command is available.
-2. The [/usr/share/dict/words](https://en.wikipedia.org/wiki/Words_(Unix)) file
+1. The [/usr/share/dict/words](https://en.wikipedia.org/wiki/Words_(Unix)) file
    is available.
-3. Supported on Linux and MacOS.
+1. Supported on Linux and MacOS.
 
 
 ## Installation
