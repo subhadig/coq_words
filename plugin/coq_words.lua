@@ -6,6 +6,7 @@ COQsources['Dict words'] = {
         -- Only plaintext and markdown filetypes are supported
         if vim.bo.filetype ~= 'markdown' and vim.bo.filetype ~= 'text' then
             callback(nil)
+            return
         end
 
         -- Get the word under cursor

@@ -4,6 +4,9 @@ Provides autocomplete for dictionary words with
 [coq_nvim](https://github.com/ms-jpq/coq_nvim).
 Uses the [look](https://linuxcommand.org/lc3_man_pages/look1.html) command.
 
+Supported for filetype "markdown" and "text" only for now.
+The supported filetype configuration can be externalized in future.
+
 
 ## Prerequisites
 
